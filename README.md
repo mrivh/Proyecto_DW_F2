@@ -12,8 +12,11 @@
 
 ### Main page
 
-Como primer paso, elegimos tener un color agradable para la vista, en este caso, creemos que tener una gama de color verde
-ayudará mucho en la primera vista del usuario, por lo tanto, tenemos este diseño para la ventana principal:
+Como primer paso, elegimos crear varias propuestas, por lo tanto, tenemos varios diseños para la main, search y view page:
+
+-  ## [Mockups Figma](https://www.figma.com/file/OSxfi2m6IwvG0E18wHQCrs/Draw?node-id=0%3A1)
+
+Tentativamente podría quedar de la siguiente manera pero aún tendrá cambios para la entrega final del proyecto:
 
 ![mockup_main](./assets/mockups/main.JPG)
 
@@ -32,13 +35,13 @@ Creemos que una buena opción sería la siguente:
 
 ![mockup_main](./assets/mockups/search.JPG)
 
-Como podemos observar, la ventana el indica que la busqueda que hizo ha tenido exito, para poder arrojarle los resultados de su búsqeda
+Observamos que la ventana indica que la busqueda fue exitosa, para poder desplegarle los resultados de su búsqeda
 con el nombre y la imagen de cada receta.
 
 ### View page
 
-Para la siguiente vista, tenemos la vista cuando el usuario seleccione una receta, se mostrarán los ingredientes de esa receta,
-además de una imagen principal de la receta seleccionada anteriormente:
+Para la siguiente vista, tenemos lo siguiente: cuando el usuario seleccione una receta, se mostrarán los ingredientes de esa receta,
+además de una imagen principal de la receta seleccionada anteriormente.
 
 ![mockup_main](./assets/mockups/receta.JPG)
 
