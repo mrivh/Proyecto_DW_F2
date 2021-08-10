@@ -10,10 +10,37 @@
 
 ## Mockups de de la Aplicación<a name="id1"></a>
 
+### Main page
+
 Como primer paso, elegimos tener un color agradable para la vista, en este caso, creemos que tener una gama de color verde
 ayudará mucho en la primera vista del usuario, por lo tanto, tenemos este diseño para la ventana principal:
 
 ![mockup_main](./assets/mockups/main.JPG)
+
+Como podemos observar, tenemos la parte del `input`, donde el usuario podrá buscar las recetas que el quiera. Por otro lado,
+en el fondo del `div` del intput, una imagen de alguna receta o algun collage de recetas, para poder darle una vista no tan simple.
+
+En la parte de abajo, tener 3 recetas random, para dale una idea al usuario, en caso de que no tenga una en particular.
+
+Y un Navbar simple, teniendo solo el logo que el daremos a nuestra página.
+
+### Search page
+
+Como siguiente vista, cuando el usuario busque su receta, le arroja aquellas donde el main word que haya insertado, exista.
+
+Creemos que una buena opción sería la siguente:
+
+![mockup_main](./assets/mockups/search.JPG)
+
+Como podemos observar, la ventana el indica que la busqueda que hizo ha tenido exito, para poder arrojarle los resultados de su búsqeda
+con el nombre y la imagen de cada receta.
+
+### View page
+
+Para la siguiente vista, tenemos la vista cuando el usuario seleccione una receta, se mostrarán los ingredientes de esa receta,
+además de una imagen principal de la receta seleccionada anteriormente:
+
+![mockup_main](./assets/mockups/receta.JPG)
 
 ---
 
