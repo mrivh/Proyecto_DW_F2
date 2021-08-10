@@ -16,7 +16,7 @@
 
 Como primer paso, vamos a tener la siguiente estructura de nuestro proyecto:
 
-![estructura_del_proyecto](./assets/image.jpg)
+![estructura_del_proyecto](./assets/01.jpg)
 
 Inicialicaremos npm en nuestro proyecto para poder tener nuestro package.json con el comando:
 
