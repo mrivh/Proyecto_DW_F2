@@ -37,6 +37,7 @@ Importamos el plugin HtmlWebpackPlugin para poder usar HTML en el proyecto y lo 
 ![html_plugin](./assets/03.JPG)
 
 Cabe recalcar que le indicamos cual es el HTML de entrada, además de indicarle nombre del template que estará creando
+
 Como le indicamos que usará un `index.html`, lo creamos dentro de la carpeta src, el cual tendrá un estructura básica,
 tal cual como esta:
 
