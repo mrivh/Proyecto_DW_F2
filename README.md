@@ -96,3 +96,39 @@ En este loader, indicamos que cada vez que babel encuentre un archivo JavaScript
 Creamos un archivo nuevo en la raíz, llamado `babel.config.json`, en el que indicaremos el preset que vamos a usar:
 
 ![config_babel](./assets/09.JPG)
+
+---
+
+## Instalación de Bootstrap<a name="id3"></a>
+
+Para comenzar, instalamos las dependencias que nos permitirán trabajar con Bootstrap:
+
+```text
+npm install bootstrap
+```
+
+Dentro de `./src` creamos una carpeta `JS` y al mismo tiempo, dentro de la carpeta, un archivo `index.js`. Ahí, importaremos boostrap para usar
+su CSS y los scripts que nos permitirán tener las funcionalidades de Boostrap:
+
+![import_bootstrap](./assets/10.JPG)
+
+Como siguiente paso, insertamos el loader necesario en la config de webpack:
+
+![loader_bootstrap](./assets/11.JPG)
+
+Como vemos, usaremos solamente CSS, así que solo insertamos el loader necesario, en este caso, son dos: `style-loader`, el cual nos
+permite usar CSS en el DOM de HTML y el loader `css-loader`, el cual, nos permite interpretar métodos como `@import` y `url()`
+
+Para poder probar que funciona Bootstrap, insertaremos en el `index.html` un componente, decidimos usar un navbar para poder ver
+que se están poniendo los estilos bien y que las funcionalidades, como los menús desplegables, están funcionando de manera
+correcta.
+
+Echamos a andar el proyecto y vemos el resultado en el navegador:
+
+![prueba_bootstrap01](./assets/12.JPG)
+
+![prueba_bootstrap02](./assets/13.JPG)
+
+Y vemos que además de los estilos, podemos ver que los scripts también funcionan de manera correcta:
+
+![prueba_bootstrap02](./assets/14.JPG)
