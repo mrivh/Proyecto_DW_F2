@@ -30,14 +30,14 @@ Este comando nos dejará como resultado un json en el que tendremos la estructur
 Creamos un nuevo archivo en la raíz, al cual llamaremos `webpack.config.js`, en el cual definiremos el input
 y el output:
 
-![webpack_config](./assets/02.jpg)
+![webpack_config](./assets/02.JPG)
 
 Importamos el plugin HtmlWebpackPlugin para poder usar HTML en el proyecto y lo agregamos a la parte de plugins:
 
-![html_plugin](./assets/03.jpg)
+![html_plugin](./assets/03.JPG)
 
 Cabe recalcar que le indicamos cual es el HTML de entrada, además de indicarle nombre del template que estará creando
 Como le indicamos que usará un `index.html`, lo creamos dentro de la carpeta src, el cual tendrá un estructura básica,
 tal cual como esta:
 
-![html_index](./assets/04.jpg)
+![html_index](./assets/04.JPG)
