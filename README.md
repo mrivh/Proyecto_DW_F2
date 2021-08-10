@@ -10,6 +10,11 @@
 
 ## Mockups de de la Aplicación<a name="id1"></a>
 
+Como primer paso, elegimos tener un color agradable para la vista, en este caso, creemos que tener una gama de color verde
+ayudará mucho en la primera vista del usuario, por lo tanto, tenemos este diseño para la ventana principal:
+
+![mockup_main](./assets/mockups/main.JPG)
+
 ---
 
 ## Instalación de Webpack, Web Dev Server y Babel<a name="id2"></a>
