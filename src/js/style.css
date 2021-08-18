@@ -16,7 +16,7 @@ body{
     font-family: 'Roboto', sans-serif;;
 }
 
-/*  */
+/* Corresponde a la search bar */
 .btn{
     font-family: inherit;
     cursor: pointer;
@@ -31,7 +31,6 @@ body{
     margin-bottom: 1rem;
 }
 
-/*  */
 .container{
     min-height: 100vh;
     
@@ -85,10 +84,22 @@ body{
     border-bottom-right-radius: 2rem;
     transition: all 0.4s linear;
 }
+
+.type-btn{
+    width: 150px;
+    height: 55px;
+    font-size: 1.5rem;
+    background: var(--green);
+    color: #fff;
+    border: none;
+   
+}
+
 .search-btn:hover{
     background: var(--green-dark);
 }
 
+/* Corresponde a la parte de resultados, la lista de items*/
 
 .meal-result{
     margin-top: 4rem;
@@ -131,7 +142,7 @@ body{
 
 
 
-/*  */
+/* Formato de valor no encontrado */
 .notFound{
     grid-template-columns: 1fr!important;
     color: var(--green);
@@ -145,7 +156,7 @@ body{
 
 
 
-/* Media Queries */
+/* Mediaqueries */
 @media screen and (min-width: 600px){
     .meal-search-box{
         width: 540px;
@@ -155,7 +166,7 @@ body{
 }
 
 @media screen and (min-width: 768px){
-    #meal{
+    #meal, #list-meal{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -169,7 +180,7 @@ body{
 }
 
 @media screen and (min-width: 992px){
-    #meal{
+    #meal, #list-meal{
         grid-template-columns: repeat(3, 1fr);
     }
 }
