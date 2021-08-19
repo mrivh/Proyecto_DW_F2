@@ -6,11 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack Setup</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/output.css">
   </head>
 
   <body>
-   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #55BBF6 !important;">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./img/comida.png"
+          width="10%"
+          height="10%"
+          alt="SUPER DIET"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ingredientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">Dietas</a>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a>Sign In</a>
+          
+        </form>
+      </div>
+    </nav>
+  
+     
   <!-- Search bar--> 
+  <main>
     <div class = "container">
       <div id="search-ingredient" class = "meal-wrapper">
         <div class = "meal-search ">
@@ -71,6 +118,63 @@
       </div>
 
     </div>
+  </main>
+  <section class="features">
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="./img/breakfast.png" alt="Publish icon" />
+        </figure>
+        <h3>Desayuno</h3>
+        <p>
+          Los mejores desayunos
+        </p>
+        <a href="">Ver ingredientes...</a>
+      </div>
+      
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="./img/sandwich.png"
+            alt="Merienda" />
+        </figure>
+        <h3>Colacion mañana y tarde</h3>
+        <p>
+          Evita el hambre a media tarde
+        </p>
+        <a href="">Ver ingredientes...</a>
+      </div>
+      
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="./img/afternoon.png" alt="Capture icon" />
+        </figure>
+        <h3>Comida.</h3>
+        <p>
+          Comida saludable
+        </p>
+        <a href="">Ver ingredientes...</a>
+      </div>
+      
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="./img/dinner.png" alt="ROI icon" />
+        </figure>
+        <h3>Cena.</h3>
+        <p>
+          Cena ligero, duerme tranquilo
+        </p>
+        <a href="">Ver ingredientes...</a>
+      </div>
+      
+    </article>
+  </section>
+
     <script>
       function show(shown, hidden) {
         document.getElementById(shown).style.display = 'block';
