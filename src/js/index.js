@@ -33,6 +33,7 @@ searchBtn.addEventListener('click', () => {
         if (event.target.getAttribute('id-meal-img')) {
             const id = event.target.getAttribute('id-meal-img');
             getMealbyId(id, 1);
+            //
         }
     })
 });
