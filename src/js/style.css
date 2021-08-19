@@ -1,186 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-:root{
-    --green: #4cc506;
-    --green-dark: #04a51f;
+:root {
+  --green: #4cc506;
+  --green-dark: #04a51f;
 }
-body{
-    font-weight: 300;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    font-family: 'Roboto', sans-serif;;
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Corresponde a la search bar */
-.btn{
-    font-family: inherit;
-    cursor: pointer;
-    outline: 0;
-    font-size: 1.05rem;
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
 }
-.text{
-    opacity: 0.8;
+.text {
+  opacity: 0.8;
 }
-.title{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.container{
-    min-height: 100vh;
-    
+.container {
+  min-height: 100vh;
 }
-.meal-wrapper{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: #fff;
-    text-align: center;
-    
+.meal-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
 }
-.meal-search{
-    margin: 2rem 0;
+.meal-search {
+  margin: 2rem 0;
 }
-.meal-search cite{
-    font-size: 1rem;
+.meal-search cite {
+  font-size: 1rem;
 }
-.meal-search-box{
-    width: 100%;
-    margin: 1.2rem 0;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
+.meal-search-box {
+  width: 100%;
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 .search-control,
-.search-btn{
-    width: 100%;
+.search-btn {
+  width: 100%;
 }
-.search-control{
-    padding: 0 1rem;
-    font-size: 1.1rem;
-    font-family: inherit;
-    outline: 0;
-    border: 1px solid var(--green);
-    color: var(--green);
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+.search-control {
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
-.search-control::placeholder{
-    color: var(--green);
+.search-control::placeholder {
+  color: var(--green);
 }
-.search-btn{
-    width: 100px;
-    height: 55px;
-    font-size: 1.5rem;
-    background: var(--green);
-    color: #fff;
-    border: none;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    transition: all 0.4s linear;
-}
-
-.type-btn{
-    width: 150px;
-    height: 55px;
-    font-size: 1.5rem;
-    background: var(--green);
-    color: #fff;
-    border: none;
-   
+.search-btn {
+  width: 100px;
+  height: 55px;
+  font-size: 1.5rem;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.4s linear;
 }
 
-.search-btn:hover{
-    background: var(--green-dark);
+.type-btn {
+  width: 150px;
+  height: 55px;
+  font-size: 1.5rem;
+  background: var(--green);
+  color: #fff;
+  border: none;
+}
+
+.search-btn:hover {
+  background: var(--green-dark);
 }
 
 /* Corresponde a la parte de resultados, la lista de items*/
 
-.meal-result{
-    margin-top: 4rem;
+.meal-result {
+  margin-top: 4rem;
 }
-#meal{
-    margin: 2.4rem 0;
+#meal {
+  margin: 2.4rem 0;
 }
-.meal-item{
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-    margin: 2rem 0;
+.meal-item {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  margin: 2rem 0;
 }
-.meal-img img{
-    width: 100%;
-    display: block;
+.meal-img img {
+  width: 100%;
+  display: block;
 }
-.meal-name{
-    padding: 1.5rem 0.5rem;
+.meal-name {
+  padding: 1.5rem 0.5rem;
 }
-.meal-name h3{
-    font-size: 1.4rem;
+.meal-name h3 {
+  font-size: 1.4rem;
 }
-.recipe-btn{
-    text-decoration: none;
-    color: #fff;
-    background: var(--green);
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.75rem 0;
-    display: block;
-    width: 100%;
-    margin: 1rem auto;
-    border-radius: 2rem;
-    transition: all 0.4s linear;
+.recipe-btn {
+  text-decoration: none;
+  color: #fff;
+  background: var(--green);
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  transition: all 0.4s linear;
 }
-.recipe-btn:hover{
-    background: var(--green-dark);
+.recipe-btn:hover {
+  background: var(--green-dark);
 }
-
-
 
 /* Formato de valor no encontrado */
-.notFound{
-    grid-template-columns: 1fr!important;
-    color: var(--green);
-    font-size: 1.8rem;
-    font-weight: 600;
-    width: 100%;
+.notFound {
+  grid-template-columns: 1fr !important;
+  color: var(--green);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
 }
-
-
-
-
-
 
 /* Mediaqueries */
-@media screen and (min-width: 600px){
-    .meal-search-box{
-        width: 540px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (min-width: 600px) {
+  .meal-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media screen and (min-width: 768px){
-    #meal, #list-meal{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .meal-item{
-        margin: 0;
-    }
-    .meal-details{
-        width: 700px;
-    }
+@media screen and (min-width: 768px) {
+  #meal,
+  #list-meal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .meal-item {
+    margin: 0;
+    width: 300px;
+    margin: 10px;
+  }
+  .meal-details {
+    width: 700px;
+  }
 }
 
-@media screen and (min-width: 992px){
-    #meal, #list-meal{
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (min-width: 992px) {
+  #meal,
+  #list-meal {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

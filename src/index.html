@@ -4,80 +4,209 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack Setup</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Team 20</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-   
-  <!-- Search bar--> 
-    <div class = "container">
-      <div id="search-ingredient" class = "meal-wrapper">
-        <div class = "meal-search ">
-          <h2 class = "title">Encuentra tus recetas favoritas :D </h2>
-          
+    <!-- Header de la página -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #4cc506"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand">Team 20</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Search bar-->
+    <div class="container">
+      <div id="search-ingredient" class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Encuentra tus recetas favoritas :D</h2>
+
           <!--Búsqueda por nombre-->
-          <div class = "meal-search-box">
-            <input type = "text" class = "search-control" placeholder="Ingrediente" id = "search-input">
-            <button type = "submit" class = "search-btn btn" id = "search-btn">
-              <i class = "fas fa-search"></i>
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Ingrediente"
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
             </button>
           </div>
         </div>
-        <button type = "submit" class = "type-btn btn">
-          Ingrediente
-        </button>
-        <button type = "submit" class = "type-btn btn" onclick="return show('search-name','search-ingredient');">
+        <button type="submit" class="type-btn btn">Ingrediente</button>
+        <button
+          type="submit"
+          class="type-btn btn"
+          onclick="return show('search-name','search-ingredient');"
+        >
           Nombre
         </button>
 
         <!--Resultado de la búsqueda-->
-        <div class = "meal-result">
-          <h2 class = "title">Resultados:</h2>
-          <div id= "meal"></div>
+        <div class="meal-result">
+          <h2 class="title">Resultados:</h2>
+          <div id="meal"></div>
         </div>
-        
-        
-     
       </div>
 
-      <div id="search-name" class = "meal-wrapper" style="display: none;">
-        <div class = "meal-search ">
-          <h2 class = "title">Encuentra tus recetas favoritas :D </h2>
-          
+      <div id="search-name" class="meal-wrapper" style="display: none">
+        <div class="meal-search">
+          <h2 class="title">Encuentra tus recetas favoritas :D</h2>
+
           <!--Búsqueda por nombre-->
-          <div class = "meal-search-box">
-            <input type = "text" class = "search-control" placeholder="Nombre de la receta" id = "search-input-name">
-            <button type = "submit" class = "search-btn btn" id = "search-name-btn">
-              <i class = "fas fa-search"></i>
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Nombre de la receta"
+              id="search-input-name"
+            />
+            <button type="submit" class="search-btn btn" id="search-name-btn">
+              <i class="fas fa-search"></i>
             </button>
           </div>
         </div>
-        <button type = "submit" class = "type-btn btn" onclick="return show('search-ingredient','search-name');">
+        <button
+          type="submit"
+          class="type-btn btn"
+          onclick="return show('search-ingredient','search-name');"
+        >
           Ingrediente
         </button>
-        <button type = "submit" class = "type-btn btn">
-          Nombre
-        </button>
+        <button type="submit" class="type-btn btn">Nombre</button>
 
         <!--Resultado de la búsqueda-->
-        <div class = "meal-result">
-          <h2 class = "title">Resultados:</h2>
-          <div id= "list-meal"></div>
+        <div class="meal-result">
+          <h2 class="title">Resultados:</h2>
+          <div id="list-meal"></div>
         </div>
-        
-        
-     
       </div>
-
     </div>
+
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #4cc506">
+            <h5 class="modal-title" id="exampleModalLabel">Team 20</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Página hecha por la API:
+            <a href="https://www.themealdb.com/">link</a> <br />
+            Creada para la fase 2 del programa Web Full Stack de #BEDU
+            <br /><br />
+            Diseñada por: <br />
+            <ul>
+              <li>Márquez Rivera Rivera Alicia</li>
+              <li>Vega Hernández Rogelio Yael</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn" style="background-color: #4cc506">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #4cc506">
+            <h5 class="modal-title" id="exampleModalLabel">Team 20</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Página hecha por la API:
+            <a href="https://www.themealdb.com/">link</a> <br />
+            Creada para la fase 2 del programa Web Full Stack de #BEDU
+            <br /><br />
+            Diseñada por: <br />
+            <ul>
+              <li>Márquez Rivera Rivera Alicia</li>
+              <li>Vega Hernández Rogelio Yael</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn" style="background-color: #4cc506">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       function show(shown, hidden) {
-        document.getElementById(shown).style.display = 'block';
-        document.getElementById(hidden).style.display = 'none';
+        document.getElementById(shown).style.display = "block";
+        document.getElementById(hidden).style.display = "none";
         return false;
       }
     </script>
-  
   </body>
 </html>
